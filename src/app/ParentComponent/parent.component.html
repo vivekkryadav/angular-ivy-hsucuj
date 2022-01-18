@@ -1,4 +1,13 @@
 <hello name="{{ nameParent }}"></hello>
-<p>Start editing to see some magic happen :)</p>
+<p [style.color]="colors[1]">=============One Way Binding=============</p>
 <p>{{ newNameParent }} is used here</p>
 <p [innerText]="newPropertyname"></p>
+<img src="{{ path }}" />
+<p></p>
+<img [src]="path" />
+<p [style.color]="colors[1]">============END ONE WAY BINDING========</p>
+<p>Two Way Binding</p>
+Input Text : <input type="text" [(ngModel)]="FormModelParent" (input)="inputEventHandler($event)" />
+<p>{{ FormModelParent }}</p>
+
+<button (click)="onClickButton()">Click me</button>
