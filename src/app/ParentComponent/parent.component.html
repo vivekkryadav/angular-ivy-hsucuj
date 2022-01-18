@@ -5,9 +5,18 @@
 <img src="{{ path }}" />
 <p></p>
 <img [src]="path" />
-<p [style.color]="colors[1]">============END ONE WAY BINDING========</p>
+<p [style.color]="colors[0]">============END ONE WAY BINDING========</p>
+<p [style.color]="colors[1]">============TWO WAY BINDING========</p>
 <p>Two Way Binding</p>
-Input Text : <input type="text" [(ngModel)]="FormModelParent" (input)="inputEventHandler($event)" />
+Input Text :
+<input
+  type="text"
+  [(ngModel)]="FormModelParent"
+  (input)="inputEventHandler($event)"
+/>
 <p>{{ FormModelParent }}</p>
 
 <button (click)="onClickButton()">Click me</button>
+<p [style.color]="colors[0]">
+  =================END TWO WAY BINDING ====================================
+</p>
