@@ -5,7 +5,8 @@ import { Component, VERSION } from '@angular/core';
   styleUrls: ['./parent.component.css'],
 })
 export class ParentComponent {
-  name = 'Angular ' + VERSION.major;
+  nameParent = 'Parent Component';
 
-  newName = 'Student';
+  newNameParent = 'String interpolation';
+  newPropertyname = 'Property Binding';
 }
