@@ -1,12 +1,12 @@
 <hello name="{{ nameParent }}"></hello>
-<p [style.color]="colors[1]">=============One Way Binding=============</p>
+<p [style.color]="colors[1]">=======One Way Binding=========</p>
 <p>{{ newNameParent }} is used here</p>
 <p [innerText]="newPropertyname"></p>
 <img src="{{ path }}" />
 <p></p>
 <img [src]="path" />
-<p [style.color]="colors[0]">============END ONE WAY BINDING========</p>
-<p [style.color]="colors[1]">============TWO WAY BINDING========</p>
+<p [style.color]="colors[0]">=========END ONE WAY BINDING======</p>
+<p [style.color]="colors[1]">=========TWO WAY BINDING========</p>
 <p>Two Way Binding</p>
 Input Text :
 <input
@@ -17,6 +17,10 @@ Input Text :
 <p>{{ FormModelParent }}</p>
 
 <button (click)="onClickButton()">Click me</button>
-<p [style.color]="colors[0]">
-  =================END TWO WAY BINDING ====================================
-</p>
+<p [style.color]="colors[0]">=========END TWO WAY BINDING=======</p>
+<my-child [parentMessage]="'This is Hard Coded Parent Message'"></my-child>
+<my-child [parentMessage]="FormModelParent"></my-child>
+<div class="card"></div>
+<my-child-outputemitter (childMessageToparent)="GetChildData($event)">
+</my-child-outputemitter>
+<p>{{ messageFromChild }}</p>

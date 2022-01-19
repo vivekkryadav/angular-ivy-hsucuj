@@ -21,4 +21,9 @@ export class ParentComponent {
   inputEventHandler(eventPayload: any): void {
     console.log(eventPayload);
   }
+  messageFromChild: string = 'Message from Chile will reflect here!';
+  GetChildData(eventMessageParent: any): void {
+    console.log(eventMessageParent);
+    this.messageFromChild = eventMessageParent;
+  }
 }
