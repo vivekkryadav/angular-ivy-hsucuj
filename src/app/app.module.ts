@@ -9,6 +9,9 @@ import { ChildComponent } from './ChildComponent/child.component';
 import { OutputEmitterChildComponent } from './OutputEmitterChildComponent/outputemitterchild.component';
 import { Feature1Module } from './feature1.module';
 import { Feature2Module } from './feature2/feature2.module';
+import { CounterService } from './Services/counter.service';
+import { NewparentComponent } from './newparent/newparent.component';
+import { NewchildComponent } from './newchild/newchild.component';
 
 @NgModule({
   imports: [BrowserModule, FormsModule, Feature1Module, Feature2Module],
@@ -18,7 +21,10 @@ import { Feature2Module } from './feature2/feature2.module';
     ParentComponent,
     ChildComponent,
     OutputEmitterChildComponent,
+    NewparentComponent,
+    NewchildComponent,
   ],
+  //providers: [CounterService],
   bootstrap: [AppComponent],
 })
 export class AppModule {}
