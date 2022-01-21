@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Optional } from '@angular/core';
+import { LoggerService } from '../Services/logger.service';
 
 @Component({
   selector: 'app-newparent',
@@ -6,8 +7,10 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./newparent.component.css'],
 })
 export class NewparentComponent implements OnInit {
-  constructor() {}
+  constructor(@Optional() private logger: LoggerService) {}
 
   ngOnInit() {}
-  Log(): void {}
+  Log(): void {
+    this.logger.Log();
+  }
 }

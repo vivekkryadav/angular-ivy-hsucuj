@@ -4,9 +4,11 @@ import { Injectable } from '@angular/core';
 //   providedIn: 'root',
 // })
 export class LoggerService {
-  constructor() {}
+  constructor() {
+    console.log('********Logger Service Instance Created!');
+  }
 
   Log(): void {
-    console.log('Logger service is hit!');
+    console.log('Logger service is hit');
   }
 }
