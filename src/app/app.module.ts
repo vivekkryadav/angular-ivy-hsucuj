@@ -12,6 +12,7 @@ import { Feature2Module } from './feature2/feature2.module';
 import { CounterService } from './Services/counter.service';
 import { NewparentComponent } from './newparent/newparent.component';
 import { NewchildComponent } from './newchild/newchild.component';
+import { HighlightDirective } from './highlight.directive';
 
 @NgModule({
   imports: [BrowserModule, FormsModule, Feature1Module, Feature2Module],
@@ -23,6 +24,7 @@ import { NewchildComponent } from './newchild/newchild.component';
     OutputEmitterChildComponent,
     NewparentComponent,
     NewchildComponent,
+    HighlightDirective,
   ],
   //providers: [CounterService],
   bootstrap: [AppComponent],

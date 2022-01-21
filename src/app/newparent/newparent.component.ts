@@ -5,6 +5,7 @@ import { LoggerService } from '../Services/logger.service';
   selector: 'app-newparent',
   templateUrl: './newparent.component.html',
   styleUrls: ['./newparent.component.css'],
+  providers: [LoggerService],
 })
 export class NewparentComponent implements OnInit {
   constructor(@Optional() private logger: LoggerService) {}

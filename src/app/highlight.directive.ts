@@ -1,13 +1,24 @@
-import { Directive, ElementRef, HostListener, Input } from '@angular/core';
+import {
+  Directive,
+  ElementRef,
+  Host,
+  HostListener,
+  Input,
+  Optional,
+} from '@angular/core';
 import { LoggerService } from './Services/logger.service';
 
 @Directive({
   selector: '[appHighlight]',
+  //providers: [LoggerService]
 })
 export class HighlightDirective {
   @Input('appHighlight')
   color: string;
-  constructor(private elementsvc: ElementRef, private logger: LoggerService) {
+  constructor(
+    private elementsvc: ElementRef,
+    @Optional() @Host() private logger: LoggerService
+  ) {
     console.log('Highlight Directive invoked');
   }
   ngOnInit(): void {
@@ -31,6 +42,11 @@ export class HighlightDirective {
   @HostListener('click')
   OnClick() {
     this.logger.Log();
+    if (!this.logger) {
+      this.elementsvc.nativeElement.children[0].style.backgroundColor = 'red';
+    } else {
+      this.elementsvc.nativeElement.children[0].style.backgroundColor = 'green';
+    }
   }
 
   private ChangeColor(color: string) {
