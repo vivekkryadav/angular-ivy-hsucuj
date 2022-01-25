@@ -1,4 +1,7 @@
 <p>parenthooksdemo works!</p>
 <input type="Text" [(ngModel)]="firstname" />
 
-<app-childhooksdemo [parentMessageIncoming]="firstname"></app-childhooksdemo>
+<app-childhooksdemo [parentMessageIncoming]="firstname">
+  <!-- <p>I am Content inside chile component with mesgae {{ firstname }}</p> -->
+  <p #contactchild>{{ firstname }}</p>
+</app-childhooksdemo>

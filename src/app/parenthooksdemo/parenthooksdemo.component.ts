@@ -1,3 +1,4 @@
+import { stringify } from '@angular/compiler/src/util';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -6,9 +7,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./parenthooksdemo.component.css'],
 })
 export class ParenthooksdemoComponent implements OnInit {
-  firstname: string = 'Hello World';
+  firstname: string = 'hello';
   constructor() {}
-
   ngOnInit() {
     //console.log('Parent ngOnInit');
   }
