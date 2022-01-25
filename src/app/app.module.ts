@@ -13,6 +13,8 @@ import { CounterService } from './Services/counter.service';
 import { NewparentComponent } from './newparent/newparent.component';
 import { NewchildComponent } from './newchild/newchild.component';
 import { HighlightDirective } from './highlight.directive';
+import { ParenthooksdemoComponent } from './parenthooksdemo/parenthooksdemo.component';
+import { ChildhooksdemoComponent } from './childhooksdemo/childhooksdemo.component';
 
 @NgModule({
   imports: [BrowserModule, FormsModule, Feature1Module, Feature2Module],
@@ -25,6 +27,8 @@ import { HighlightDirective } from './highlight.directive';
     NewparentComponent,
     NewchildComponent,
     HighlightDirective,
+    ParenthooksdemoComponent,
+    ChildhooksdemoComponent,
   ],
   //providers: [CounterService],
   bootstrap: [AppComponent],
