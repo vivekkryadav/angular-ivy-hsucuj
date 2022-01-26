@@ -16,9 +16,17 @@ import { HighlightDirective } from './highlight.directive';
 import { ParenthooksdemoComponent } from './parenthooksdemo/parenthooksdemo.component';
 import { ChildhooksdemoComponent } from './childhooksdemo/childhooksdemo.component';
 import { ObservabledemoComponent } from './observabledemo/observabledemo.component';
+import { FetchDataAPIService } from './Services/fetch-data-api.service';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
-  imports: [BrowserModule, FormsModule, Feature1Module, Feature2Module],
+  imports: [
+    BrowserModule,
+    FormsModule,
+    Feature1Module,
+    Feature2Module,
+    HttpClientModule,
+  ],
   declarations: [
     AppComponent,
     HelloComponent,
