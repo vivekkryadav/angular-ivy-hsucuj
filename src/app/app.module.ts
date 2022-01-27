@@ -18,6 +18,7 @@ import { ChildhooksdemoComponent } from './childhooksdemo/childhooksdemo.compone
 import { ObservabledemoComponent } from './observabledemo/observabledemo.component';
 import { FetchDataAPIService } from './Services/fetch-data-api.service';
 import { HttpClientModule } from '@angular/common/http';
+import { ServicedemoComponent } from './servicedemo/servicedemo.component';
 
 @NgModule({
   imports: [
@@ -39,6 +40,7 @@ import { HttpClientModule } from '@angular/common/http';
     ParenthooksdemoComponent,
     ChildhooksdemoComponent,
     ObservabledemoComponent,
+    ServicedemoComponent,
   ],
   //providers: [CounterService],
   bootstrap: [AppComponent],

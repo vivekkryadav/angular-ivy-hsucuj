@@ -1,0 +1,7 @@
+<p>servicedemo works!</p>
+
+<button (click)="GetAllUsersList()">Get All UsersList</button>
+
+<div *ngFor="let e of usersList | async">
+  <span>{{ e.empid }} , {{ e.empname }} , {{ e.country }}</span>
+</div>
