@@ -5,3 +5,8 @@
 <div *ngFor="let e of usersList | async">
   <span>{{ e.empid }} , {{ e.empname }} , {{ e.country }}</span>
 </div>
+<br /><br />
+Input Number : <input type="text" [(ngModel)]="numberValue" />
+
+<p>With Pipe :{{ numberValue | squarenumber }}</p>
+<p [innerText]="numberValue"></p>

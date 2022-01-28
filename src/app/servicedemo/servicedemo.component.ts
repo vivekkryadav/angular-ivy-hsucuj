@@ -13,6 +13,8 @@ export class ServicedemoComponent implements OnInit {
   //public userListwithoutPipe: any[];
   public username: String;
   public country: string;
+
+  public numberValue: number = 0;
   ngOnInit() {}
 
   GetAllUsersList() {

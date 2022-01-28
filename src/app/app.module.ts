@@ -19,6 +19,7 @@ import { ObservabledemoComponent } from './observabledemo/observabledemo.compone
 import { FetchDataAPIService } from './Services/fetch-data-api.service';
 import { HttpClientModule } from '@angular/common/http';
 import { ServicedemoComponent } from './servicedemo/servicedemo.component';
+import { SquarePipe } from './pipe/square.pipe';
 
 @NgModule({
   imports: [
@@ -41,6 +42,7 @@ import { ServicedemoComponent } from './servicedemo/servicedemo.component';
     ChildhooksdemoComponent,
     ObservabledemoComponent,
     ServicedemoComponent,
+    SquarePipe,
   ],
   //providers: [CounterService],
   bootstrap: [AppComponent],
